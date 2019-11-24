@@ -1,0 +1,117 @@
+body {
+    margin: 15px 20px 15px 5px;
+    font-family: 'Khula', sans-serif;
+}
+
+button {
+  background-color: #DE9302;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.gallery {
+  margin: 0px 8% 0px 8%;
+  height: 600px;
+  overflow: scroll;
+}
+
+#name {
+    font-size: 30px;
+}
+#rightnav {
+    text-align:right;
+    padding-top: 15px;
+}
+
+#rightnav a {
+    padding-left: 20px;
+}
+
+div#radardiv {
+  height:300px
+}
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay_text {
+  background-color: white;
+  padding: 5% 10% 5% 10%;
+}
+
+.img {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.thumbnail:hover .img {
+  opacity: 0.1;
+}
+
+.thumbnail:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  text-align: center;
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.icon {
+    display: none;
+  }
+
+/* .fa-bars:after{ */
+    /* content: "\f0c9"; */
+/* } */
+  
+  #rightnav a {
+    color: black;
+  }
+
+  /* Add an active class to highlight the current page */
+  #rightnav a.active {
+    color: #DE9302;
+  }
+
+@media screen and (max-width: 770px) {
+    #rightnav a:not(:first-child) {display: none;}
+    #rightnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 770px) {
+    #rightnav.responsive {position: relative;}
+    #rightnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    #rightnav.responsive a {
+      float: none;
+      display: block;
+      text-align: right;
+    }
+  }
+
