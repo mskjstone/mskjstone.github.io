@@ -17,13 +17,15 @@
     <!-- anime.js -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.0/anime.min.js"></script>
     <!-- script   -->
-    <script src="index.js"></script>
+    
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="index_style.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Khula:300&display=swap" rel="stylesheet">
     <!-- icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
 </head>
 
 <header>
@@ -32,11 +34,11 @@
         <div class="row">
             <div class="col-sm-4 col-xs-6 col-md-4">
                 <div id="name">katie johnstone</div>
-                <span id="joyful">joyful </span><span id="meaningful">meaningful </span><span id="design">design</span>
+                <span class="sub"><span id="joyful">joyful </span><span id="meaningful">meaningful </span><span id="design">design</span></span>
             </div>
-            <div class="col-sm-8 col-xs-6 col-md-8" id="rightnav" class="rightnav responsive">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+            <div class="col-sm-8 col-xs-6 col-md-8" id="rightnav" class="rightnav">
+                <a  class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" ></i>
                 </a>
                 <a>projects</a>
                 <a class="active">process</a>
@@ -54,13 +56,16 @@
         <h2 class="text">my design process</h2>
         <p class="text">hover over each node to read more.</p>
         <div class="row" id ="radardiv">
-            <canvas id="radarcanvas"></canvas>
+            <canvas id="radarcanvas">a</canvas>
+                <div class="col" id="radarLabel">
+                    a
+                </div>
         </div>
         <h3 class="text">Hover to learn how I approached these projects:</h3>
         <div class="gallery">
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-8" >
-                    <div class="thumbnail">
+                <div class="col-md-3 col-sm-6 col-xs-8" >
+                    <div class="thumbnail" id="t1" onmouseover="project(this.id)">
                         <img class="img" src="mac.jpg" alt="cake" style="width:100%">
                         <div class="caption">
                             <p>Man About Cake</p>
@@ -73,8 +78,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-8">
-                    <div class="thumbnail">
+                <div class="col-md-3 col-sm-6 col-xs-8">
+                    <div class="thumbnail" id="t2" onmouseover="project(this.id)">
                         <img class="img" src="spark.png" alt="Sparkville" style="width:100%">
                         <div class="caption">
                             <p>Sparkville</p>
@@ -88,8 +93,8 @@
 
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-8">
-                    <div class="thumbnail">
+                <div class="col-md-3 col-sm-6 col-xs-8">
+                    <div class="thumbnail" id="t3" onmouseover="project(this.id)">
                         <img class="img" src="art.png" alt="art" style="width:100%">
                         <div class="caption">
                             <p>Art Bettering Communities</p>
@@ -107,6 +112,7 @@
     </div>
 
 </body>
+<script src="index.js"></script>
 </html>
 
 <!-- anime.js for animation - has a lot of documentation-->
@@ -114,3 +120,4 @@
 <!--  https://www.visualcinnamon.com/2015/10/different-look-d3-radar-chart.html -->
 <!-- https://github.com/maxwellito/vivus#vivusjs -->
 <!-- http://lazylinepainter.info/#composer -->
+<!-- chart js tooltip hover https://github.com/chartjs/Chart.js/issues/4109 -->

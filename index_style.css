@@ -23,6 +23,19 @@ button {
 #name {
     font-size: 30px;
 }
+
+.sub {
+  font-size: 16px;
+}
+
+#joyful {
+  color: #DE9302;
+}
+
+#meaningful {
+  color: #809BC6;
+}
+
 #rightnav {
     text-align:right;
     padding-top: 15px;
@@ -34,6 +47,10 @@ button {
 
 div#radardiv {
   height:300px
+}
+
+#radarLabel {
+  padding
 }
 
 .overlay {
@@ -56,6 +73,36 @@ div#radardiv {
   opacity: 1;
   transition: .5s ease;
   backface-visibility: hidden;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.thumbnail#t1 {
+  animation: 1.5s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+ }
+
+.thumbnail#t2 {
+  animation: 1.5s fadeIn;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+.thumbnail#t3 {
+  animation: 1.5s fadeIn;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
 }
 
 .thumbnail:hover .img {
@@ -115,3 +162,5 @@ hr {
     }
   }
 
+  /* transitions on load https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load */
+  /* css tooltip https://www.w3schools.com/css/css_tooltip.asp */
