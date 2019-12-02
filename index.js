@@ -1,5 +1,5 @@
 var marksData = {
-  labels: ["reality", "define", "facilitate", "novelty", "iterate"],
+  labels: ["Fearless facing reality", "define", "facilitate", "novelty", "iterate"],
   datasets: [{
   backgroundColor: "rgba(218, 165, 32, 0.7)",
   pointRadius: 1,
@@ -8,11 +8,13 @@ var marksData = {
   backgroundColor: "rgba(255, 255, 255, 0)",
   // pointBackgroundColor: "rgba(128, 128, 128, 0)",
   data: [100, 100, 100, 100, 100],
-  pointHoverRadius: 15,
-  pointRadius: 6,
-  notes: ["w","x","y","z","aa"]
+  borderWidth: 0.5,
+  pointHoverRadius: 20,
+  pointRadius: 8,
 }]
 };
+
+var tooltipsLabel = ["My weapons are insatiable curiosity and data analysis","x","y","z","aa"];
 
 var chartOptions = {
   scale: {
@@ -33,14 +35,15 @@ var chartOptions = {
   },
   responsive:true,
   maintainAspectRatio: false
-// tooltips: {
-//   enabled: true,
-//   callbacks: {
-//     label: function(tooltipItem) {
-//       return tooltipItem.yLabel;
-//        }
-//    }
-// },
+,tooltips: {
+  enabled: true,
+  mode: 'index',
+  callbacks: {
+    title: function(tooltipItems,data) {
+      return tooltipsLabel[tooltipItems[1].index];
+       }
+   }
+}
 }
 
 var radarChart;
@@ -70,12 +73,12 @@ function project(id) {
   console.log(id);
   let skills;
   if (id === "t1") {
-    skills = [40,80,60,100,60];
+    skills = [40,80,60,90,60];
     // debugger;
   } else if (id === "t2") {
-    skills = [70,60,60,100,60];
+    skills = [70,60,60,90,30];
   } else {
-    skills = [100,60,100,30,80];
+    skills = [90,60,100,30,80];
   }
   marksData.datasets[0].data = skills;
   
