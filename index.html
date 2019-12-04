@@ -41,9 +41,9 @@
                     <i class="fa fa-bars" ></i>
                 </a>
                 <a>projects</a>
-                <a class="active">process</a>
+                <a class="active" href="index.html">process</a>
                 <a>about</a>
-                <a>resume</a>
+                <a href="Johnstone_resume.pdf">resume</a>
                 <hr>
             </div>
         </div>
@@ -53,8 +53,8 @@
 <body>
     <!--This is the container for the grid in Bootstrap-->
     <div class="container-fluid">
-        <h2 class="text">my design process</h2>
-        <p class="text">hover over each node to read more.</p>
+        <h2 class="text" id = "reset" onmouseover="project(this.id)">my design process</h2>
+        <p class="text" id="text2">hover over each node to read more.</p>
         <div class="row" id ="radardiv">
             <canvas id="radarcanvas"></canvas>
                 <div class="col" id="radarLabel">

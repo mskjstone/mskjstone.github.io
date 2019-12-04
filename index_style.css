@@ -117,6 +117,13 @@ div#radardiv {
   text-align: center;
 }
 
+.text#text2 {
+  animation: 1.5s fadeIn;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
 hr {
     margin-top: 5px;
     margin-bottom: 0px;
