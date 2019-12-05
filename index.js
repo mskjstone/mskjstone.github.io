@@ -1,10 +1,13 @@
+
+
+
 var marksData = {
   labels: ["Fearless Facing Reality", "Construct Clarity", "Facilitate Action", "Novel & Resourceful", "Iterate Optimistically"],
   datasets: [{
   backgroundColor: "rgba(218, 165, 32, 0.7)",
   pointRadius: 1,
   pointHitRadius: 0,
-  data: [50, 50, 50, 50, 50]
+  data: [30, 30, 30, 30, 30]
   }, {
   backgroundColor: "rgba(255, 255, 255, 0)",
   // pointBackgroundColor: "rgba(128, 128, 128, 0)",
@@ -76,6 +79,14 @@ window.onload = function() {
 
 };
 
+var y = screen.height;
+console.log(y);
+var chartHeight = 0.28*y;
+var carouselHeight = 0.3*y;
+
+marksCanvas.height = chartHeight;
+document.getElementById('lowerHalf').height = carouselHeight;
+
 /* resonsive menu */
 function myFunction() {
   var x = document.getElementById("rightnav");
@@ -88,7 +99,7 @@ function myFunction() {
 
 /* pass skills as datasets data */
 function project(id) {
-  console.log(id);
+  // console.log(id);
   let skills;
   if (id === "t1") {
     skills = [40,80,60,90,60];
@@ -98,7 +109,7 @@ function project(id) {
   } else if (id === "t3") {
     skills = [90,60,100,30,80];
   }   else {
-    skills = [50,50,50,50,50];
+    skills = [30,30,30,30,30];
   }
   marksData.datasets[0].data = skills;
 
@@ -110,3 +121,25 @@ function project(id) {
   })
 }
 // https://stackoverflow.com/questions/48542537/adding-custom-title-in-tooltips-of-chart-js
+
+$('#recipeCarousel').carousel({
+  interval: 10000
+})
+
+$('.carousel .carousel-item').each(function(){
+    var minPerSlide = 3;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+        
+        next.children(':first-child').clone().appendTo($(this));
+      }
+});

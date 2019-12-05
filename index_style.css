@@ -1,6 +1,7 @@
 body {
     margin: 15px 20px 15px 5px;
     font-family: 'Khula', sans-serif;
+    max-height: 700px;
 }
 
 button {
@@ -14,10 +15,12 @@ button {
   font-size: 14px;
 }
 
+.container.text-center.my-3 {
+  height: 25%;
+}
+
 .gallery {
   margin: 0px 8% 0px 8%;
-  height: 600px;
-  overflow: scroll;
 }
 
 #name {
@@ -45,9 +48,9 @@ button {
     padding-left: 20px;
 }
 
-div#radardiv {
-  height:300px
-}
+/* div#radardiv {
+  height:50%;
+} */
 
 #radarLabel {
   padding
@@ -66,7 +69,7 @@ div#radardiv {
 
 .overlay_text {
   background-color: white;
-  padding: 5% 10% 5% 10%;
+  padding: 15% 5% 5% 5%;
 }
 
 .img {
@@ -85,7 +88,15 @@ div#radardiv {
   }
 }
 
-.thumbnail#t1 {
+ #recipeCarousel {
+  animation: 3s fadeIn;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+ }
+
+
+/* .thumbnail#t1 {
   animation: 1.5s fadeIn;
   animation-fill-mode: forwards;
   visibility: hidden;
@@ -103,13 +114,13 @@ div#radardiv {
   animation-delay: 0.6s;
   animation-fill-mode: forwards;
   visibility: hidden;
-}
+} */
 
-.thumbnail:hover .img {
+.card:hover .img-fluid {
   opacity: 0.1;
 }
 
-.thumbnail:hover .overlay {
+.card:hover .overlay {
   opacity: 1;
 }
 
@@ -168,6 +179,40 @@ hr {
       text-align: right;
     }
   }
+
+  @media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
 
   /* transitions on load https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load */
   /* css tooltip https://www.w3schools.com/css/css_tooltip.asp */
