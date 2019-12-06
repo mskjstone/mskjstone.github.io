@@ -4,18 +4,16 @@
     <title>My Design Process</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--jQuery must also be linked for Bootstrap to function-->
+    <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
+    <!-- Bootstrap JS and CSS-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- chart.js -->
-    <script src="Chart.js"></script> 
-    <!-- icon library -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="assets/js/Chart.js"></script> 
     <!-- style -->
-    <link rel="stylesheet" type="text/css" href="index_style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index_style.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Khula:300&display=swap" rel="stylesheet">
    
@@ -48,7 +46,7 @@
 
 <body>
     <div class="container-fluid">
-        <span class="text"><button type="button" class="btn btn-success" data-toggle="tooltip" title="Let's play with data! Hover over each node of the chart to learn more about my approach, and hover over each project below to see the skills I used most in each. Project pages coming soon." data-placement="right">Why a radar chart?</button></span>
+        <span class="text"><button type="button" class="btn btn-success" data-toggle="tooltip" title="Let's play with data! Hover over each node of the chart to learn what I bring as a design leader. Hover over each project below to see which skills it called upon. Project pages coming soon." data-placement="right">Why a radar chart?</button></span>
         <h3 class="text" id = "process reset" onmouseover="project(this.id)">my design process</h3>
         <div class="row" id ="radardiv">
             <canvas id="radarcanvas"></canvas>
@@ -63,7 +61,7 @@
                                 <div class="carousel-item active">
                                     <div class="col-md-4 col-sm-6 col-xs-8">
                                         <div class="card card-body thumbnail" id="t1" onmouseover="project(this.id)">
-                                            <img class="img-fluid" src="assets/mac.jpg" alt="cake">
+                                            <img class="img-fluid" src="assets/img/mac.jpg" alt="cake">
                                             <div class="overlay">
                                                     <p class="overlay_text">Domain research, ideation, content design and analysis for hit YouTube series</p>
                                                     <br>
@@ -75,7 +73,7 @@
                                 <div class="carousel-item">
                                     <div class="col-md-4 col-sm-6 col-xs-8">
                                         <div class="card card-body thumbnail" id="t2" onmouseover="project(this.id)">
-                                            <img class="img-fluid" src="assets/spark.png" alt="Sparkville">
+                                            <img class="img-fluid" src="assets/img/spark.png" alt="Sparkville">
                                             <div class="overlay">
                                                     <p class="overlay_text">Career exploration game for middle schoolers designed using principles of learning science</p>
                                                     <br>
@@ -87,7 +85,7 @@
                                 <div class="carousel-item">
                                     <div class="col-md-4 col-sm-6 col-xs-8">
                                         <div class="card card-body thumbnail" id="t3" onmouseover="project(this.id)">
-                                            <img class="img-fluid" src="assets/art.png" alt="art">
+                                            <img class="img-fluid" src="assets/img/art.png" alt="art">
                                             <div class="overlay">
                                                     <p class="overlay_text">User research and needs validation exploring public art and community identity in Pittsburgh</p>
                                                     <br>
@@ -110,5 +108,5 @@
             </div>
         </div>
 </body>
-<script src="index.js"></script>
+<script src="assets/js/index.js"></script>
 </html>
