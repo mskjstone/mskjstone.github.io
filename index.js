@@ -79,6 +79,7 @@ window.onload = function() {
 
 };
 
+//display
 var y = screen.height;
 console.log(y);
 var chartHeight = 0.28*y;
@@ -87,14 +88,18 @@ var carouselHeight = 0.3*y;
 marksCanvas.height = chartHeight;
 document.getElementById('lowerHalf').height = carouselHeight;
 
-/* resonsive menu */
+/* responsive menu */
+// function myFunction() {
+//   var x = document.getElementById("rightnav");
+//   if (x.className === "rightnav") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "rightnav";
+//   }
+// }
+
 function myFunction() {
-  var x = document.getElementById("rightnav");
-  if (x.className === "rightnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "rightnav";
-  }
+  document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
 }
 
 /* pass skills as datasets data */
@@ -113,7 +118,7 @@ function project(id) {
   }
   marksData.datasets[0].data = skills;
 
-  
+  //draw chart
   radarChart = new Chart(marksCanvas, {
     type: 'radar',
     data: marksData,
@@ -121,6 +126,8 @@ function project(id) {
   })
 }
 // https://stackoverflow.com/questions/48542537/adding-custom-title-in-tooltips-of-chart-js
+
+//carousel js
 
 $('#recipeCarousel').carousel({
   interval: 10000

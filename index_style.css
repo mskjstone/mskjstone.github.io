@@ -1,7 +1,9 @@
 body {
     margin: 15px 20px 15px 5px;
     font-family: 'Khula', sans-serif;
-    max-height: 700px;
+    /* max-height: 900px; */
+    max-width: 1300px;
+    line-height: 1;
 }
 
 button {
@@ -24,11 +26,16 @@ button {
 }
 
 #name {
-    font-size: 30px;
+    font-size: 2.5vw;
 }
 
 .sub {
-  font-size: 16px;
+  font-size: 1.25vw;
+}
+
+@media screen and (max-width:800px) {
+  #name {font-size: 4vw;}
+  .sub {font-size: 2vw;}
 }
 
 #joyful {
@@ -39,22 +46,36 @@ button {
   color: #809BC6;
 }
 
-#rightnav {
-    text-align:right;
-    padding-top: 15px;
+
+/* start of menu */
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-#rightnav a {
-    padding-left: 20px;
+/* Float the list items side by side */
+ul.topnav li {float: right;}
+hr {float}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 14px;
 }
 
-/* div#radardiv {
-  height:50%;
-} */
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
 
-#radarLabel {
-  padding
-}
+/* end of menu */
 
 .overlay {
   transition: .5s ease;
@@ -154,11 +175,41 @@ hr {
   }
 
   /* Add an active class to highlight the current page */
-  #rightnav a.active {
+  li a {
+    color: black;
+  }
+
+  li.active a {
     color: #DE9302;
   }
 
-@media screen and (max-width: 770px) {
+  /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:800px) {
+  ul.topnav li {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:800px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: right;
+  }
+}
+/* @media screen and (max-width: 770px) {
     #rightnav a:not(:first-child) {display: none;}
     #rightnav a.icon {
       float: right;
@@ -178,7 +229,7 @@ hr {
       display: block;
       text-align: right;
     }
-  }
+  } */
 
   @media (max-width: 768px) {
     .carousel-inner .carousel-item > div {

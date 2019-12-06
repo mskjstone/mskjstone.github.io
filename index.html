@@ -25,11 +25,24 @@
     <!-- make responsive topnav https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-4 col-xs-6 col-md-4">
+            <div class="col-sm-6 col-xs-8 col-md-4">
                 <div id="name">katie johnstone</div>
                 <span class="sub"><span id="joyful">joyful </span><span id="meaningful">meaningful </span><span id="design">design</span></span>
             </div>
-            <div class="col-sm-8 col-xs-6 col-md-8" id="rightnav" class="rightnav">
+            <div class="col-sm-6 col-xs-4 col-md-8">
+                <ul class="topnav">
+                    <li><a href="assets/Johnstone_resume.pdf" target="_blank">resume</a></li>
+                    <li><a>about</a></li>
+                    <li class="active"><a href="index.html">process</a></li>
+                    <li><a>projects</a></li>
+                    <li class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+
+            <!-- <div class="col-sm-8 col-xs-6 col-md-8" id="rightnav" class="rightnav">
                 <a  class="icon" onclick="myFunction()">
                     <i class="fa fa-bars" ></i>
                 </a>
@@ -38,7 +51,7 @@
                 <a>about</a>
                 <a href="Johnstone_resume.pdf" target="_blank">resume</a>
                 <hr>
-            </div>
+            </div> -->
         </div>
     </div>
 </header>
@@ -50,8 +63,6 @@
         <p class="text" id="text2">hover over each node to read more.</p>
         <div class="row" id ="radardiv">
             <canvas id="radarcanvas"></canvas>
-                <div class="col" id="radarLabel">
-                </div>
         </div>
     </div>
     <div id="lowerHalf" class="container text-center my-3">
@@ -63,7 +74,7 @@
                                 <div class="carousel-item active">
                                     <div class="col-md-4 col-sm-6 col-xs-8">
                                         <div class="card card-body thumbnail" id="t1" onmouseover="project(this.id)">
-                                            <img class="img-fluid" src="mac.jpg" alt="cake">
+                                            <img class="img-fluid" src="assets/mac.jpg" alt="cake">
                                             <div class="overlay">
                                                     <p class="overlay_text">Domain research, ideation, content design and analysis for hit YouTube series</p>
                                                     <br>
@@ -75,7 +86,7 @@
                                 <div class="carousel-item">
                                     <div class="col-md-4 col-sm-6 col-xs-8">
                                         <div class="card card-body thumbnail" id="t2" onmouseover="project(this.id)">
-                                            <img class="img-fluid" src="spark.png" alt="Sparkville">
+                                            <img class="img-fluid" src="assets/spark.png" alt="Sparkville">
                                             <div class="overlay">
                                                     <p class="overlay_text">Career exploration game for middle schoolers designed using principles of learning science</p>
                                                     <br>
@@ -87,7 +98,7 @@
                                 <div class="carousel-item">
                                     <div class="col-md-4 col-sm-6 col-xs-8">
                                         <div class="card card-body thumbnail" id="t3" onmouseover="project(this.id)">
-                                            <img class="img-fluid" src="art.png" alt="art">
+                                            <img class="img-fluid" src="assets/art.png" alt="art">
                                             <div class="overlay">
                                                     <p class="overlay_text">User research and needs validation exploring public art and community identity in Pittsburgh</p>
                                                     <br>
