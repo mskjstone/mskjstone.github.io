@@ -7,12 +7,13 @@
     <!--jQuery must also be linked for Bootstrap to function-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- chart.js -->
     <script src="Chart.js"></script> 
     <!-- icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="index_style.css">
     <!-- fonts -->
@@ -24,12 +25,12 @@
 <header>
     <!-- make responsive topnav https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6 col-xs-8 col-md-4">
+        <div class="row" style="justify-content: space-between; flex-wrap:nowrap">
+            <div class="col-sm-6 col-xs-3 col-md-4">
                 <div id="name">katie johnstone</div>
                 <span class="sub"><span id="joyful">joyful </span><span id="meaningful">meaningful </span><span id="design">design</span></span>
             </div>
-            <div class="col-sm-6 col-xs-4 col-md-8">
+            <div class="col-sm-6 col-xs-9 col-md-8" style="margin: 0; width: max-content;">
                 <ul class="topnav">
                     <li><a href="assets/Johnstone_resume.pdf" target="_blank">resume</a></li>
                     <li><a>about</a></li>
@@ -41,32 +42,20 @@
                 </ul>
                 <hr>
             </div>
-
-            <!-- <div class="col-sm-8 col-xs-6 col-md-8" id="rightnav" class="rightnav">
-                <a  class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars" ></i>
-                </a>
-                <a>projects</a>
-                <a class="active" href="index.html">process</a>
-                <a>about</a>
-                <a href="Johnstone_resume.pdf" target="_blank">resume</a>
-                <hr>
-            </div> -->
         </div>
     </div>
 </header>
 
 <body>
-    <!--This is the container for the grid in Bootstrap-->
     <div class="container-fluid">
-        <h2 class="text" id = "reset" onmouseover="project(this.id)">my design process</h2>
-        <p class="text" id="text2">hover over each node to read more.</p>
+        <span class="text"><button type="button" class="btn btn-success" data-toggle="tooltip" title="Let's play with data! Hover over each node of the chart to learn more about my approach, and hover over each project below to see the skills I used most in each. Project pages coming soon." data-placement="right">Why a radar chart?</button></span>
+        <h3 class="text" id = "process reset" onmouseover="project(this.id)">my design process</h3>
         <div class="row" id ="radardiv">
             <canvas id="radarcanvas"></canvas>
         </div>
     </div>
     <div id="lowerHalf" class="container text-center my-3">
-        <h3 class="text">Hover to learn how I approached these projects:</h3>
+        <h4 class="text">Projects</h4>
         <div class="gallery">
             <div class="row mx-auto my-auto">
                     <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">

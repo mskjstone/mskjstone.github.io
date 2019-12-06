@@ -26,17 +26,53 @@ button {
 }
 
 #name {
-    font-size: 2.5vw;
+    font-size: 24px;
 }
 
 .sub {
-  font-size: 1.25vw;
+  font-size: 14px;
+}
+
+.btn-success {
+  background-color: #809BC6;
+  border-color: #809BC6;
+  font-size: 12px;
+  margin-bottom: 10px;
+  position: absolute;
+  right: 0;
+  margin-right: 25%;
+}
+
+@media screen and (max-width:1000px) {
+  .btn-success {margin-right:0%;}
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success {
+  color: #fff;
+  background-color: #506D9C;
+  border-color: #506D9C;
+  box-shadow: none;
+}
+
+h3{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  margin-top: 30px;
+  font-size: 1.75vw;
 }
 
 @media screen and (max-width:800px) {
-  #name {font-size: 4vw;}
-  .sub {font-size: 2vw;}
+  h4 {font-size: 3vw;}
 }
+
+@media screen and (max-width:600px) {
+  #name {font-size: 20px; }
+  .sub {font-size: 12px; }
+}
+
 
 #joyful {
   color: #DE9302;
@@ -46,10 +82,17 @@ button {
   color: #809BC6;
 }
 
+.text {
+  text-align: center;
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
 
 /* start of menu */
-
-/* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
   list-style-type: none;
   margin: 0;
@@ -59,7 +102,6 @@ ul.topnav {
 
 /* Float the list items side by side */
 ul.topnav li {float: right;}
-hr {float}
 
 /* Style the links inside the list items */
 ul.topnav li a {
@@ -109,12 +151,27 @@ ul.topnav li.icon {display: none;}
   }
 }
 
- #recipeCarousel {
-  animation: 3s fadeIn;
-  animation-delay: 0.7s;
+#lowerHalf {
+  animation: 2s fadeIn;
+  animation-delay: 0.5s;
   animation-fill-mode: forwards;
   visibility: hidden;
  }
+
+ #recipeCarousel {
+  animation: 2s fadeIn;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+ }
+
+ .btn-success {
+  animation: 1.5s fadeIn;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
 
 
 /* .thumbnail#t1 {
@@ -143,22 +200,6 @@ ul.topnav li.icon {display: none;}
 
 .card:hover .overlay {
   opacity: 1;
-}
-
-.text {
-  text-align: center;
-}
-
-.text#text2 {
-  animation: 1.5s fadeIn;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-  visibility: hidden;
-}
-
-hr {
-    margin-top: 5px;
-    margin-bottom: 0px;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -209,27 +250,8 @@ hr {
     text-align: right;
   }
 }
-/* @media screen and (max-width: 770px) {
-    #rightnav a:not(:first-child) {display: none;}
-    #rightnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 770px) {
-    #rightnav.responsive {position: relative;}
-    #rightnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    #rightnav.responsive a {
-      float: none;
-      display: block;
-      text-align: right;
-    }
-  } */
+
+/* carousel */
 
   @media (max-width: 768px) {
     .carousel-inner .carousel-item > div {
