@@ -1,112 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>My Design Process</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Bootstrap JS and CSS-->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- chart.js -->
-    <script src="assets/js/Chart.js"></script> 
-    <!-- style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/index_style.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Khula:300&display=swap" rel="stylesheet">
-   
-
-</head>
-
-<header>
-    <!-- make responsive topnav https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-    <div class="container-fluid">
-        <div class="row" style="justify-content: space-between; flex-wrap:nowrap">
-            <div class="col-sm-6 col-xs-3 col-md-4">
-                <div id="name">katie johnstone</div>
-                <span class="sub"><span id="joyful">joyful </span><span id="meaningful">meaningful </span><span id="design">design</span></span>
-            </div>
-            <div class="col-sm-6 col-xs-9 col-md-8" style="margin: 0; width: max-content;">
-                <ul class="topnav">
-                    <li><a href="assets/Johnstone_resume.pdf" target="_blank">resume</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li class="active"><a href="index.html">process</a></li>
-                    <li><a>projects</a></li>
-                    <li class="icon">
-                        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-                    </li>
-                </ul>
-                <hr>
-            </div>
-        </div>
-    </div>
-</header>
-
-<body>
-    <div class="container-fluid">
-        <span class="text"><button type="button" class="btn btn-success" data-toggle="tooltip" title="Let's play with data! Hover over each node of the chart to learn what I bring as a design leader. Hover over each project below to see which skills it called upon. Project pages coming soon." data-placement="right">Why a radar chart?</button></span>
-        <h3 class="text" id = "process reset" onmouseover="project(this.id)">my design process</h3>
-        <div class="row" id ="radardiv">
-            <canvas id="radarcanvas"></canvas>
-        </div>
-    </div>
-    <div id="lowerHalf" class="container text-center my-3">
-        <h4 class="text">Projects</h4>
-        <div class="gallery">
-            <div class="row mx-auto my-auto">
-                    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-                            <div class="carousel-inner w-100" role="listbox">
-                                <div class="carousel-item active">
-                                    <div class="col-md-4 col-sm-6 col-xs-8">
-                                        <div class="card card-body thumbnail" id="t1" onmouseover="project(this.id)">
-                                            <img class="img-fluid" src="assets/img/mac.jpg" alt="cake">
-                                            <div class="overlay">
-                                                    <p class="overlay_text">Domain research, ideation, content design and analysis for hit YouTube series</p>
-                                                    <br>
-                                                    <button>SEE PROJECT</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-4 col-sm-6 col-xs-8">
-                                        <div class="card card-body thumbnail" id="t2" onmouseover="project(this.id)">
-                                            <img class="img-fluid" src="assets/img/spark.png" alt="Sparkville">
-                                            <div class="overlay">
-                                                    <p class="overlay_text">Career exploration game for middle schoolers designed using principles of learning science</p>
-                                                    <br>
-                                                    <button>SEE PROJECT</button>
-                                            </div>
-                                        </div>                
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-4 col-sm-6 col-xs-8">
-                                        <div class="card card-body thumbnail" id="t3" onmouseover="project(this.id)">
-                                            <img class="img-fluid" src="assets/img/art.png" alt="art">
-                                            <div class="overlay">
-                                                    <p class="overlay_text">User research and needs validation exploring public art and community identity in Pittsburgh</p>
-                                                    <br>
-                                                    <button>SEE PROJECT</button>
-                                            </div>    
-                                        </div>
-                                    </div>
-                                </div>
+ <html>
+    <!DOCTYPE html>
+    <html lang="zxx">
+    
+    <head>
+        <title>Katie Johnstone</title>
+        <!-- Meta tag Keywords -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="Infinitude Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+        <script>
+            addEventListener("load", function() {
+                setTimeout(hideURLbar, 0);
+            }, false);
+    
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+    
+        </script>
+        <!-- //Meta tag Keywords -->
+        <!-- Custom-Files -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- Bootstrap-Core-CSS -->
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+        <!-- Style-CSS -->
+        <!-- font-awesome-icons -->
+        <link href="css/font-awesome.css" rel="stylesheet">
+        <!-- //font-awesome-icons -->
+    
+    </head>
+    
+    <body>
+        <!--/home -->
+        <div id="home" class="inner-w3pvt-page">
+            <div class="overlay-innerpage">
+                <!--/top-nav -->
+                <div class="top_w3pvt_main container">
+                    <!--/header -->
+                    <header class="nav_w3pvt text-center">
+                        <!-- nav -->
+                        <nav class="wthree-w3ls">
+                            <div id="logo">
+                                <h1> <a class="navbar-brand px-0 mx-0" href="index.html">katie johnstone
+                                    </a>
+                                </h1>
                             </div>
-                            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                    </div>
+    
+                            <label for="drop" class="toggle">Menu</label>
+                            <input type="checkbox" id="drop" />
+                            <ul class="menu mr-auto">
+                                <li class="active"><a href="index.html">projects</a></li>
+                                <!-- <li><a href="index.html">process</a></li> -->
+                                <li><a href="about.html">about</a></li>
+                                <li><a href="/assets/Johnstone_resume.pdf" target="_blank">Resume</a></li>
+    
+                                <li class="social-icons ml-lg-3"><a href="https://www.linkedin.com/in/kjohnstone/" target="_blank" class="p-0 social-icon"><span class="fa fa-linkedin" aria-hidden="true"></span>
+                                        <div class="tooltip">LinkedIn</div>
+                                    </a> </li>
+                            </ul>
+                        </nav>
+                        <!-- //nav -->
+                    </header>
+                    <!--//header -->
+    
+                    <!-- /breadcrumb-->
+                    <!-- <div class="inner-w3pvt-page-info">
+                        <ol class="breadcrumb d-flex">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active">About</li>
+                        </ol>
+    
+                    </div> -->
+                    <!--//breadcrumb -->
+                </div>
+                <!-- //top-nav -->
+            </div>
+        </div>
+
+ <!-- /projects -->
+ <section class="projects py-5" id="gallery">
+    <div class="container py-md-5">
+        <h3 class="tittle-w3ls text-left mb-5"><span class="pink">my</span> work</h3>
+        <div class="row news-grids mt-md-5 mt-4 text-center">
+            <div class="col-md-4 gal-img">
+                <a href="mac.html"><img src="images/g1.jpg" alt="w3pvt" class="img-fluid"></a>
+                <div class="gal-info">
+                    <h5>Man About Cake<span class="decription">Research • Analysis • Iteration</span></h5>
+                </div>
+            </div>
+            <div class="col-md-4 gal-img">
+                <a href="sparkville.html"><img src="images/g2.jpg" alt="w3pvt" class="img-fluid"></a>
+                <div class="gal-info">
+                    <h5>Sparkville<span class="decription">Prototyping • User Testing</span></h5>
+                </div>
+            </div>
+            <div class="col-md-4 gal-img">
+                <a href="#gal3"><img src="images/g3.jpg" alt="w3pvt" class="img-fluid"></a>
+                <div class="gal-info">
+                    <h5>pARTicipate<span class="decription">Research • Prototyping • User Testing</span></h5>
                 </div>
             </div>
         </div>
+    </div>
+ </section>
+
+     <!-- copyright -->
+     <div class="copy_right p-3 d-flex">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-lg-9 copy_w3pvt">
+                    <p class="text-lg-left text-center">© 2019 Infinitude. All rights reserved | Design by
+                        <a href="http://w3layouts.com/" target="_blank">W3layouts</a> & K. Johnstone</p>
+
+                </div>
+                <!-- move top -->
+                <div class="col-lg-3 move-top text-lg-right text-center">
+                    <a href="#home" class="move-top">
+                        <span class="fa fa-angle-double-up mt-3" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <!-- move top -->
+            </div>
+        </div>
+
+    </div>
+    <!-- //copyright -->
 </body>
-<script src="assets/js/index.js"></script>
+
 </html>
+
