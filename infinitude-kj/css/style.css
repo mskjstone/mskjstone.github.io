@@ -656,7 +656,7 @@ li>a:only-child:after {
 
 @media print, screen and (min-width: 40em) {
 .sidebar {
-    margin-left: 8.33333%;
+    margin-left: 18.33333%;
 }
 }
 
