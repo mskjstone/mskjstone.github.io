@@ -27,6 +27,10 @@ a:hover {
     text-decoration: none;
 }
 
+.vertical-line {
+    border-left: thick solid #feac00
+}
+
 input[type="button"]:hover,
 input[type="submit"]:hover {
     transition: .5s ease-in;
@@ -48,7 +52,7 @@ h6 {
 
 p {
     font-size: 1em;
-    color: #777;
+    color: black;
     line-height: 1.8em;
 }
 

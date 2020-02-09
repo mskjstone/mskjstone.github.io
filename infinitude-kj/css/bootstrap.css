@@ -2589,7 +2589,7 @@ fieldset:disabled a.btn {
 .btn-success.disabled, .btn-success:disabled {
   color: #fff;
   background-color: #28a745;
-  border-color: #28a745;
+  border-color: #a9b1ab;
 }
 
 .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
@@ -4932,14 +4932,14 @@ tbody.collapse.show {
 
 .jumbotron {
   padding: 2rem 1rem;
-  margin-bottom: 2rem;
-  background-color: #e9ecef;
+  margin-bottom: 1rem;
+  /* background-color: #e9ecef; */
   border-radius: 0.3rem;
 }
 
 @media (min-width: 576px) {
   .jumbotron {
-    padding: 4rem 2rem;
+    /* padding: 4rem 2rem; */
   }
 }
 
@@ -7676,7 +7676,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-  /* padding-top: 3rem !important; */
+  padding-top: 3rem !important;
 }
 
 .pr-5,
@@ -8319,7 +8319,7 @@ button.bg-dark:focus {
   }
   .mt-lg-5,
   .my-lg-5 {
-    margin-top: 3rem !important;
+    margin-top: 1rem !important;
   }
   .mr-lg-5,
   .mx-lg-5 {
