@@ -682,6 +682,14 @@ li>a:only-child:after {
     text-align: center;
 }
 
+.sub-tittle.mt-3.mb-4.about {
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+}
+
 .timeline-icon {
     width: 25px;
 }

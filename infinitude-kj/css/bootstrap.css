@@ -421,6 +421,13 @@ h6, .h6 {
   line-height: 1.2;
 }
 
+.quote {
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.2;
+  /* color: var(--gray-dark); */
+}
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -7674,8 +7681,7 @@ button.bg-dark:focus {
   padding: 3rem !important;
 }
 
-.pt-5,
-.py-5 {
+.pt-5, .py-5 {
   padding-top: 3rem !important;
 }
 
@@ -8181,8 +8187,7 @@ button.bg-dark:focus {
   .p-md-5 {
     padding: 3rem !important;
   }
-  .pt-md-5,
-  .py-md-5 {
+  .pt-md-5 {
     padding-top: 3rem !important;
   }
   .pr-md-5,
