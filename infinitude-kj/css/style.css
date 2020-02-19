@@ -85,7 +85,7 @@ nav {
 
 a.navbar-brand {
     font-size: 0.8em;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 1px;
     line-height: 0.8em;
     text-transform: uppercase;
@@ -1294,7 +1294,7 @@ video {
 
 .overlay-innerpage {
     min-height: 11em;
-    background: rgba(0, 0, 0, 0.44);
+    background: rgba(0, 0, 0, 0.54);
 }
 
 .inner-w3pvt-page-info {
