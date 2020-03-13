@@ -89,7 +89,16 @@ a.navbar-brand {
     letter-spacing: 1px;
     line-height: 0.8em;
     text-transform: uppercase;
-    color: #fff;
+    color: white;
+}
+
+a.navbar-brand.black {
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 0.8em;
+    text-transform: uppercase;
+    color: black;
 }
 
 #logo a {
@@ -136,7 +145,17 @@ nav ul li {
 /* Styling the links */
 
 nav a {
-    color: #fff;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 0 14px;
+    font-weight: 600;
+    margin: 0 0.5em;
+    text-transform: uppercase;
+}
+
+nav a.navblack {
+    color: black;
     font-size: 13px;
     letter-spacing: 1px;
     padding: 0 14px;
@@ -182,7 +201,7 @@ nav ul ul {
     padding: 10px;
     z-index: 999;
     border: 1px solid #ddd;
-    left: 165px;
+    left: 0px;
     text-align: left;
 }
 
@@ -511,7 +530,7 @@ li>a:only-child:after {
 
 /* Text of slides - END */
 
-/* Calculate AUTOPLAY for BULLETS */
+/* Calculate AUTOPLAY for BULLETS
 @keyframes bullet {
 
     0%,
@@ -523,9 +542,9 @@ li>a:only-child:after {
     100% {
         background: #fff;
     }
-}
+} */
 
-#play1:checked~div .fake-radio .radio-btn:nth-child(1) {
+/* #play1:checked~div .fake-radio .radio-btn:nth-child(1) {
     animation: bullet 12300ms infinite -1000ms;
 }
 
@@ -535,12 +554,12 @@ li>a:only-child:after {
 
 #play1:checked~div .fake-radio .radio-btn:nth-child(3) {
     animation: bullet 12300ms infinite 7200ms;
-}
+} */
 
 /* Calculate AUTOPLAY for BULLETS - END */
 
 /* Calculate AUTOPLAY for SLIDES */
-@keyframes slide {
+/* @keyframes slide {
 
     0%,
     25.203252032520325% {
@@ -556,18 +575,18 @@ li>a:only-child:after {
     91.869918699187% {
         margin-left: -200%;
     }
-}
+} */
 
-.st-slider>#play1:checked~.images .images-inner {
+/* .st-slider>#play1:checked~.images .images-inner {
     animation: slide 12300ms infinite;
-}
+} */
 
 /* Calculate AUTOPLAY for SLIDES - END */
 /* //banner slider */
 
 /* background images for banner */
 .banner-w3pvt-1 {
-    background: url(../images/banner1.jpg) no-repeat top;
+    background: url(../images/pine.png) no-repeat top;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -577,7 +596,7 @@ li>a:only-child:after {
 }
 
 .banner-w3pvt-2 {
-    background: url(../images/banner2.jpg) no-repeat center;
+    background: url(../images/co.png) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -587,7 +606,7 @@ li>a:only-child:after {
 }
 
 .banner-w3pvt-3 {
-    background: url(../images/banner3.jpg) no-repeat center;
+    background: url(../images/main_banner.png) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -680,6 +699,10 @@ li>a:only-child:after {
 
 .tittle-w3ls.mb-3.about {
     text-align: center;
+}
+
+p.white {
+    color: white;
 }
 
 .sub-tittle.mt-3.mb-4.about {
@@ -839,7 +862,7 @@ h3.tittle-w3ls.two {
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
 
-h3.tittle-w3ls.two {
+h3.tittle-w3ls.two, h3.white.tittle-w3ls {
     color: #fff;
 }
 
@@ -882,8 +905,8 @@ h3.tittle-w3ls.two {
 
 /*--//features--*/
 .services {
-    background: url(../images/banner4.jpg) no-repeat top;
-    background-size: cover;
+    background: url(../images/pine.png) no-repeat top;
+    background-size: contain;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1260,16 +1283,16 @@ section.hand-crafted p {
 }
 
 .inner-w3pvt-page {
-    background: url(/infinitude-kj/images/main_banner.png) no-repeat center;
+    /* background: url(/infinitude-kj/images/main_banner.png) no-repeat center; */
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-    min-height: 11em;
+    min-height: 6em;
 }
 
-.inner-w3pvt-page.mac {
+/* .inner-w3pvt-page.mac {
     background: url(../images/mac_banner.png) no-repeat center;
 }
 
@@ -1279,7 +1302,7 @@ section.hand-crafted p {
 
 .inner-w3pvt-page.part {
     background: url(../images/part_banner.png) no-repeat center;
-}
+} */
 
 video {
     max-width: 750px;
@@ -1293,8 +1316,8 @@ video {
 }
 
 .overlay-innerpage {
-    min-height: 11em;
-    background: rgba(0, 0, 0, 0.54);
+    min-height: 6em;
+    /* background: rgba(0, 0, 0, 0.54); */
 }
 
 .inner-w3pvt-page-info {

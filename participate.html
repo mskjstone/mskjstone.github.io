@@ -45,23 +45,33 @@
                         <!-- nav -->
                         <nav class="wthree-w3ls">
                             <div id="logo">
-                                <h1> <a class="navbar-brand px-0 mx-0" href="index.html">katie johnstone
+                                <h1> <a class="navbar-brand black px-0 mx-0" href="index.html">katie johnstone
                                     </a>
                                 </h1>
                             </div>
-    
+        
                             <label for="drop" class="toggle">Menu</label>
-                            <input type="checkbox" id="drop" />
+                            <input type="checkbox" id="drop">
                             <ul class="menu mr-auto">
-                                <li class="active"><a href="index.html">projects</a></li>
-                                <!-- <li><a href="index.html">process</a></li> -->
-                                <li><a href="about.html">about</a></li>
-                                <li><a href="/assets/Johnstone_resume.pdf" target="_blank">Resume</a></li>
-    
-                                <li class="social-icons ml-lg-3"><a href="https://www.linkedin.com/in/kjohnstone/" target="_blank" class="p-0 social-icon"><span class="fa fa-linkedin" aria-hidden="true"></span>
+                                <li>
+                                    <!-- First Tier Drop Down -->
+                                    <label for="drop-2" class="toggle toggle-2">Projects <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                                    <a class="navblack" href="index.html">Projects  <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                    <input type="checkbox" id="drop-2">
+                                    <ul>
+                                        <li><a href="https://medium.com/mhci-capstone-2020-team-neverland" target="_blank" class="drop-text">Aging in Place</a></li>
+                                        <li><a href="sparkville.html" class="drop-text">Sparkville</a></li>
+                                        <li><a href="participate.html" class="drop-text">pARTicipate</a></li>
+                                        <li><a href="mac.html" class="drop-text">Man About Cake</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="navblack" href="about.html">About</a></li>
+                                <li><a class="navblack" href="/assets/Johnstone_resume.pdf" target="_blank">Resume</a></li>
+        
+                                <li class="social-icons ml-lg-3"><a class="navblack" href="https://www.linkedin.com/in/kjohnstone/" target="_blank" class="p-0 social-icon"><span class="fa fa-linkedin" aria-hidden="true"></span>
                                         <div class="tooltip">LinkedIn</div>
                                     </a> </li>
-                            </ul>
+                        </ul>
                         </nav>
                         <!-- //nav -->
                     </header>
