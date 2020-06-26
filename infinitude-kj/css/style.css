@@ -711,6 +711,10 @@ p.white {
     color: white;
 }
 
+h4.white {
+    color:white;
+}
+
 .sub-tittle.mt-3.mb-4.about {
     text-align: center;
 }
@@ -1168,12 +1172,20 @@ section#gallery {
     text-transform: uppercase;
 }
 
-span.decription {
+span.decription.upper {
     text-transform: uppercase;
     display: block;
     font-size: 0.8em;
     color: #888;
     letter-spacing: 2px;
+    margin-top: 0.5em;
+}
+
+span.decription {
+    display: block;
+    font-size: 1em;
+    color: BLACK;
+    /* letter-spacing: 2px; */
     margin-top: 0.5em;
 }
 
