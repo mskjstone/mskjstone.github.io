@@ -1035,6 +1035,10 @@ img.responsive {
     height: auto;
 }
 
+img.sig {
+    width: 10em;
+}
+
 img.grey {
     filter: grayscale(100%);
 }
