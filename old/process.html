@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Design Process</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap JS and CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- chart.js -->
+    <script src="assets/js/Chart.js"></script> 
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/index_style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Khula:300&display=swap" rel="stylesheet">
+   
+
+</head>
+
+<header>
+    <!-- make responsive topnav https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+    <div class="container-fluid">
+        <div class="row" style="justify-content: space-between; flex-wrap:nowrap">
+            <div class="col-sm-6 col-xs-3 col-md-4">
+                <div id="name">katie johnstone</div>
+                <span class="sub"><span id="joyful">joyful </span><span id="meaningful">meaningful </span><span id="design">design</span></span>
+            </div>
+            <div class="col-sm-6 col-xs-9 col-md-8" style="margin: 0; width: max-content;">
+                <ul class="topnav">
+                    <li><a href="assets/Johnstone_resume.pdf" target="_blank">resume</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li class="active"><a href="index.html">process</a></li>
+                    <li><a>projects</a></li>
+                    <li class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="container-fluid">
+        <span class="text"><button type="button" class="btn btn-success" data-toggle="tooltip" title="Let's play with data! Hover over each node of the chart to learn what I bring as a design leader. Hover over each project below to see which skills it called upon. Project pages coming soon." data-placement="right">Why a radar chart?</button></span>
+        <h3 class="text" id = "process reset" onmouseover="project(this.id)">my design process</h3>
+        <div class="row" id ="radardiv">
+            <canvas id="radarcanvas"></canvas>
+        </div>
+    </div>
+    <div id="lowerHalf" class="container text-center my-3">
+        <h4 class="text">Projects</h4>
+        <div class="gallery">
+            <div class="row mx-auto my-auto">
+                    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                            <div class="carousel-inner w-100" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-md-4 col-sm-6 col-xs-8">
+                                        <div class="card card-body thumbnail" id="t1" onmouseover="project(this.id)">
+                                            <img class="img-fluid" src="assets/img/mac.jpg" alt="cake">
+                                            <div class="overlay">
+                                                    <p class="overlay_text">Domain research, ideation, content design and analysis for hit YouTube series</p>
+                                                    <br>
+                                                    <button>SEE PROJECT</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-4 col-sm-6 col-xs-8">
+                                        <div class="card card-body thumbnail" id="t2" onmouseover="project(this.id)">
+                                            <img class="img-fluid" src="assets/img/spark.png" alt="Sparkville">
+                                            <div class="overlay">
+                                                    <p class="overlay_text">Career exploration game for middle schoolers designed using principles of learning science</p>
+                                                    <br>
+                                                    <button>SEE PROJECT</button>
+                                            </div>
+                                        </div>                
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-4 col-sm-6 col-xs-8">
+                                        <div class="card card-body thumbnail" id="t3" onmouseover="project(this.id)">
+                                            <img class="img-fluid" src="assets/img/art.png" alt="art">
+                                            <div class="overlay">
+                                                    <p class="overlay_text">User research and needs validation exploring public art and community identity in Pittsburgh</p>
+                                                    <br>
+                                                    <button>SEE PROJECT</button>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="assets/js/index.js"></script>
+</html>
