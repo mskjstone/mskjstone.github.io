@@ -1220,11 +1220,18 @@ span.decription {
 .popup {
     background: #fff;
     border-radius: 5px;
-    width: 35%;
+    width: 40%;
     position: relative;
     margin: 8em auto;
     padding: 3em 1em;
 }
+
+@media (max-width: 767px) {
+    .popup {
+        width: 80%;
+    }
+}
+
 
 .popup p {
     font-size: 15px;
